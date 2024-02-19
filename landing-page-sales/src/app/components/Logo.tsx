@@ -1,4 +1,9 @@
-export default function Logo({ tamanho, altura, cor }) {
+interface Props {
+    tamanho: string
+    altura: string
+    cor: string
+}
+export default function Logo({ tamanho, altura, cor }: Props) {
     return (
         <div>
             <div>
