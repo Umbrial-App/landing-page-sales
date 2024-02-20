@@ -4,6 +4,9 @@ import Image01 from '../../public/image-1.png';
 import Logo from './components/Logo';
 import NavBar from './components/NabBar';
 import CardPrice from './components/CardsPrice';
+import TabsBar from './components/TabsBar';
+import Footer from './components/Footer';
+import CallToAct from './components/CallToAct';
 
 export default function Home() {
   return (
@@ -61,11 +64,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className='w-full h-[650px] flex items-center justify-center max-w-screen-xl mx-auto  '>
+        <TabsBar />
+      </div>
+      <div>
+        <CallToAct />
+      </div>
 
       <div className='w-full max-w-screen-xl mx-auto '>
 
         <CardPrice />
 
+      </div>
+      <div className='w-full max-w-screen-xl mx-auto '>
+        <Footer />
       </div>
     </div>
   );

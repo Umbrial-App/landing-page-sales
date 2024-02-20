@@ -15,11 +15,19 @@ export default function NavBar() {
                         altura="70"
                         tamanho="120"
                         cor="#000" />
-                    <nav className="flex gap-5 ">
-                        <p>Produto</p>
-                        <p>Solução</p>
-                        <p>Sobre</p>
-                        <p>Preços</p>
+                    <nav className="flex gap-5 transition-all py-2 ">
+                        <p
+                            className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all"
+                        >Produto</p>
+                        <p
+                            className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all"
+                        >Solução</p>
+                        <p
+                            className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all"
+                        >Sobre</p>
+                        <p
+                            className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all"
+                        >Preços</p>
                     </nav>
                     <button type="button" className="bg-[#FAC20F] px-6 py-1 text-white rounded hover:drop-shadow-sm hover:scale-125 shadow-2xl shadow-[#FAC20F] transition-all ">Contrate Agora</button>
                 </div>
