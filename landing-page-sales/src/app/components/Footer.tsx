@@ -7,11 +7,11 @@ export default function Footer() {
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
-                            <a href="/" className="flex items-center">
+                            <a href="/" className="flex -mt-36 items-center">
                                 <Logo
-                                    altura='200'
+                                    altura='250'
                                     cor='black'
-                                    tamanho='50'
+                                    tamanho='400'
                                 />
                             </a>
                         </div>
@@ -29,18 +29,18 @@ export default function Footer() {
                             </div>
                             <div>
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Siga-nos</h2>
-                                <ul className="text-gray-500 font-medium">
+                                <ul className="text-gray-500  font-medium">
                                     <li className="mb-4">
                                         <a href="/" className="hover:underline">Instagram</a>
                                     </li>
                                     <li>
-                                        <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Facebook</a>
+                                        <a href="/" className="hover:underline">Facebook</a>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Info</h2>
-                                <ul className="text-gray-500 font-medium">
+                                <ul className="text-gray-500 flex font-medium">
                                     <li className="mb-4">
                                         <a href="#" className="hover:underline">Politica e Privacidade</a>
                                     </li>

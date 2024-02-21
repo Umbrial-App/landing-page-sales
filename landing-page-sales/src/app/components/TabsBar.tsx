@@ -4,8 +4,8 @@ import PatternLogo from "./PatternLogo"
 export default function TabsBar() {
     return (
         <div>
-            <div className="flex h-[420px] justify-center gap-6">
-                <div className="w-full justify-evenly flex flex-col rounded-2xl p-3 shadow-2xl shadow-[#FAC20F] bg-[#FAC20F]">
+            <div className="flex flex-wrap  w-full justify-center gap-6">
+                <div className="lg:w-1/4 w-3/4 h-[470px] justify-evenly flex flex-col rounded-2xl p-3 shadow-2xl shadow-[#FAC20F] bg-[#FAC20F]">
                     <strong>
                         <h1 className="text-3xl">Atendimento Personalizado</h1>
                     </strong>
@@ -16,7 +16,7 @@ export default function TabsBar() {
                         <PatternLogo />
                     </div>
                 </div>
-                <div className="w-full justify-evenly flex flex-col p-3 bg-black rounded-2xl">
+                <div className="lg:w-1/4 w-3/4 h-[470px] justify-evenly flex flex-col p-3 bg-black rounded-2xl">
                     <strong>
                         <h1 className="text-3xl text-[#FAC20F]">
                             Conhecimento Profundo do Cliente
@@ -30,7 +30,7 @@ export default function TabsBar() {
                     </div>
                     <PatternLogo />
                 </div>
-                <div className="w-full justify-evenly flex flex-col p-3 bg-black rounded-2xl">
+                <div className="lg:w-1/4 w-3/4 h-[470px]  justify-evenly flex flex-col p-3 bg-black rounded-2xl">
                     <strong>
                         <h1 className="text-3xl text-[#FAC20F]">
                             Metrificação Eficiente                        </h1>
