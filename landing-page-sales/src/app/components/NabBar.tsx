@@ -35,7 +35,7 @@ export default function NavBar() {
                         </button>
                     </div>
                     <div className='-mt-6 mb-3'>
-                        <Logo altura="70" tamanho="120" cor="#000" className="lg:hidden" />
+                        <Logo altura="70" tamanho="120" cor="#000" />
                     </div>
                     <div >
 
