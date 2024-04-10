@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function CardPrice() {
     return (
         <div>
@@ -9,9 +11,8 @@ export default function CardPrice() {
                     </div>
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                         {/* Card 1 */}
-                        <div className="justify-evenly flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8">
+                        <div className="justify-between h-full flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8">
                             <div>
-
                                 <h3 className="mb-4 text-2xl font-semibold">Plano Individual</h3>
                                 <p className="font-light text-gray-500 sm:text-sm">Desenhado pensando no profissional autônomo ou freelancers que buscam agilidade nos seus agendamentos. </p>
                                 <div className="flex justify-center items-baseline my-8">
@@ -24,8 +25,6 @@ export default function CardPrice() {
                                     </span>
                                     <span className="text-gray-500">/Mês</span>
                                 </div>
-                            </div>
-                            {/* Lista */}
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
                                     {/* Icone */}
@@ -43,11 +42,15 @@ export default function CardPrice() {
                                     <span>Agendamento Online e automático</span>
                                 </li>
                             </ul>
-                            <a href="#" className="text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center border hover:scale-110 transition-all">Comece hoje mesmo</a>
+                            </div>
+                            {/* Lista */}
+                            <Button>
+                                Contrate Hoje mesmo
+                            </Button>
                         </div>
 
                         {/* Card 2 */}
-                        <div className="justify-evenly flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8">
+                        <div className="justify-between flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow xl:p-8">
                             <div>
 
                                 <h3 className="mb-4 text-2xl font-semibold">Plano Básico</h3>
@@ -62,8 +65,6 @@ export default function CardPrice() {
                                     </span>
                                     <span className="text-gray-500">/Mês</span>
                                 </div>
-                            </div>
-                            {/* Lista */}
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
                                     {/* Icone */}
@@ -91,7 +92,11 @@ export default function CardPrice() {
                                     <span>Emissão de comprovantes</span>
                                 </li>
                             </ul>
-                            <a href="#" className="text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center border hover:scale-110 transition-all">Experimente agora mesmo</a>
+                            </div>
+                            {/* Lista */}
+                            <Button>
+                                Contrate Hoje mesmo
+                            </Button>
                         </div>
 
                         {/* Pricing Card 3 */}
@@ -146,7 +151,9 @@ export default function CardPrice() {
                                     <span>Emissão de Comprovantes e Lembretes pelo WhatsApp</span>
                                 </li>
                             </ul>
-                            <a href="#" className="text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center border hover:scale-110 transition-all">Começar agora</a>
+                            <Button>
+                                Contrate Hoje mesmo
+                            </Button>
                         </div>
                     </div>
                 </div>

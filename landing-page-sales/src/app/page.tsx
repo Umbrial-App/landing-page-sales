@@ -6,7 +6,7 @@ import NavBar from './components/NabBar';
 import CardPrice from './components/CardsPrice';
 import TabsBar from './components/TabsBar';
 import Footer from './components/Footer';
-import CallToAct from './components/CallToAct';
+import Acordeon from './components/Acordeon';
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           objectFit="cover"
           quality={100}
         />
-        <div className="flex items-center justify-center lg:flex lg:justify-start w-full h-full max-w-screen-xl mx-auto z-[2]">
+        <div className="flex w-[950px] items-center justify-center lg:flex lg:justify-start h-full max-w-screen-xl mx-auto z-[2]">
           <div className="flex gap-6 items-center lg:items-start lg:flex-col justify-center flex-col">
             <div className='lg:flex items-center gap-2 lg:flex-row flex-col justify-center flex lg:justify-start w-full lg:items-baseline'>
               <h1 className=" text-4xl -mb-12 lg:text-4xl items-baseline gap-2 text-start font-bold text-white">
@@ -38,8 +38,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex items-center lg:h-[700px] justify-center '>
-        <div className='max-w-screen-xl p-7 flex gap-8 flex-col lg:flex-row items-center justify-center'>
+      <div className='flex items-center lg:h-[700px]  justify-center '>
+        <div className='w-[1020px] p-7 flex gap-8 flex-col lg:flex-row items-center justify-center'>
           <div className='w-full gap-8 lg:w-3/4 flex flex-col lg:flex-row items-center justify-center'>
             <div className='flex flex-col gap-6 text-center lg:text-left'>
               <h1 className='text-3xl text-justify'>
@@ -71,16 +71,17 @@ export default function Home() {
       <div className='w-screen  flex items-center justify-center max-w-screen-xl mx-auto  '>
         <TabsBar />
       </div>
-      {/* <div>
-        <CallToAct />
-      </div> */}
 
-      <div className='w-full max-w-screen-xl mx-auto '>
+
+      <div className='w-[1050px] max-w-screen-xl mx-auto '>
 
         <CardPrice />
 
       </div>
-      <div className='w-full max-w-screen-xl mx-auto '>
+
+      <Acordeon />
+
+      <div className='w-[px] max-w-screen-xl mx-auto '>
         <Footer />
       </div>
     </div>

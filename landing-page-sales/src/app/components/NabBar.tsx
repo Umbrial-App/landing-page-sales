@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Logo from './Logo';
+import { Button } from '@/components/ui/button';
 
 export default function NavBar() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -17,14 +18,12 @@ export default function NavBar() {
                     <strong>
                         Revolucione Sua Barbearia com 30 Dias Grátis do Nosso Sistema de Experiência Personalizada!
                     </strong>
-                    <button
-                        type="button"
-                        className="bg-slate-950 px-6 py-1 text-white rounded hover:drop-shadow-sm hover:bg-slate-700 transition-all"
-                    >
-                        Contrate Agora
-                    </button>
+                    <Button>
+                        Entre em contato
+                    </Button>
+
                 </div>
-                <div className="flex px-12 justify-evenly w-full  items-center align-middle content-center">
+                <div className="flex px-12 justify-center w-[1050px] m-auto   items-center align-middle content-center">
                     <div className=" flex lg:hidden w-full">
                         <button
                             type="button"
@@ -34,16 +33,30 @@ export default function NavBar() {
                             &#8801;
                         </button>
                     </div>
-                    <div className='-mt-6 mb-3'>
+                    <div className='-mt-6 pl-0 ml-0 mb-3 m-auto'>
                         <Logo altura="70" tamanho="120" cor="#000" />
                     </div>
                     <div >
 
                         <nav className=" hidden lg:flex   w-full items-center gap-5 transition-all py-2">
-                            <p className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all">Produto</p>
-                            <p className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all">Solução</p>
-                            <p className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all">Sobre</p>
-                            <p className="hover:border-b-[0.7px] border-black py-2 cursor-pointer transition-all">Preços</p>
+                            <Button variant={'link'}>
+                                Produto
+                            </Button>
+                            <Button variant={'link'}>
+                                Solução
+                            </Button>
+                            <Button variant={'link'}>
+                                Sobre
+                            </Button>
+                            <Button variant={'link'}>
+                                Preço
+                            </Button>
+
+                            <Button variant={'outline'}>
+                                <a href="https://app.umbrial.com/">
+                                    Login
+                                </a>
+                            </Button>
                         </nav>
                     </div>
                 </div>
